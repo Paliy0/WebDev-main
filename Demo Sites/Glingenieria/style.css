@@ -1,0 +1,158 @@
+body {
+   background-color: #f0deb6;
+  color: #000305;
+  font-size: 87.5%; /*Base font size is usually 14px */
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.5;
+  text-align: left;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ECEBE4;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #666;
+}
+
+
+a {
+  text-decoration: none; /*removes underlining links*/
+}
+a:link, a:visited{
+  color: #CF5C3F;
+
+
+}
+
+a:hover, a:active {
+  background-color: #CF5C3F;
+  color: #fff;
+
+}
+
+.body {
+  margin: 0 auto;
+  width: 70%;
+  clear:both; /* makes sure no floating elements are on the left or right sides*/
+
+}
+
+.mainHeader h1 {
+  margin-left: 30%;
+  transform: translateY(-40%);
+
+}
+
+.mainHeader img {
+  width: 5%;
+  height: 10%;
+  margin: 2% 0;
+  margin-left: 25%;
+  transform: translateY(95%);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.navbar {
+  height: 70px;
+  width: 50%;
+  background: black;
+  color: white;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.navbarNav { /*targets the unordered list element*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.mainContent {
+  line-height: 25px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+/*  overflow: hidden; avoids containers to overlap */
+}
+
+.maincontent header {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 3% 5%;
+  margin-top: 0%;
+}
+.maincontent content {
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 3% 5%;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  margin-top: 1%;
+  left: 0;
+  animation: 20s slider infinite;
+
+}
+
+.slider figure img {
+  width: 20%;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
