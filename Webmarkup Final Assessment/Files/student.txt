@@ -1,4 +1,0 @@
-Student name: Pablo Gulias Prats
-Student number: 672252
-Student class: IT1D
-URL student GitHub repository: https://github.com/Paliy0/Webmarkup-Final-Assessment
