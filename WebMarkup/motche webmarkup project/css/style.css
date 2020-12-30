@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    transition: .2s;
+    
+}
+main{
+    display: flex;
+}
+/* header style */
+video{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.header {
+    padding: 70px 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    /* display: inline-block; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 1179px) {
+    .header{
+        display: block;
+    }
+    .header div h1{
+        margin-top: 20px;
+     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .header div h1{
+        margin: 20px 0;
+     }
+    
+  }
+
+.header div h2{
+   font-size: 22px;
+}
+.header div h1{
+    color: #333;
+    line-height: 40px;
+    font-size: 50px;
+    
+}
+
+.header a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    /* padding: ; */
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul img{
+    width: 150px;
+    margin-bottom: -5px;
+}
+.navbar ul a {
+    margin-bottom: -10px;
+}
+
+.navbar ul li{
+    display: inline;
+  }
+.navbar  li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navbar .hamburger-menu{
+  color: #fff;
+  font-size: 40px;
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.active{
+  background-color: #1abc9c;
+}
+
+
+.navbar .hamburger-menu:hover{
+  color: #1abc9c;
+}
+.hamburger-menu{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+    .navbar ul li{
+        display: block;
+      }
+    .navbar  li a {
+        display: block;
+    }
+    .navbar a {
+      margin-bottom: 0;
+    }
+    .navbar ul {
+      display: block;
+        padding: 0 0 20px;
+        height: 50px;
+    }
+    .hamburger-menu{
+      display: block;
+    }
+    
+  }
+
+  
+
+.navbar li a:hover {
+    background-color: #1abc9c;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+/* article */
+article{
+    width: 350px;
+    border: 1px solid #ccc;
+    margin: 8px;
+    box-shadow: 0px 0px 7px 0px gray;
+    border-radius: 8px;
+}
+article img{
+    width: 100%;
+}
+article footer{
+    padding: 8px 8px 20px;
+    border-top: 1px solid #ccc;
+}
+article footer h2{
+    margin-bottom: 8px;
+}
+article .article-detail{
+    color: #6d6c6c;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+article a{
+    text-decoration: none;
+    background: #1abc9c ;
+    color: white;
+    padding: 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+article a:hover{
+    background: #007a62 ;
+}
+
+/* aside */
+aside{
+    width: 20%;
+    padding: 30px 10px;
+}
+
+@media only screen and (max-width: 1179px) {
+    main{
+        display: block;
+    }
+    aside{
+        width: 100%;
+        padding: 30px 10px;
+    text-align: center;
+
+    }
+  }
+
+aside ol{
+    margin-top: 20px;
+}
+aside li{
+
+    margin-bottom: 7px;
+    font-size: 15px;
+    color: #4e4e4e;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  /* cookie */
+
+  .cookie{
+      cursor: pointer;
+      position: fixed;
+      padding: 10px;
+      bottom: 0;
+      right: 0;
+      color: #FFF;
+      opacity: .5;
+      background: #FA0;
+  }
+
+  .logo{
+      height:80px;
+      width: 150px;
+     position: relative;
+     top: 35px;
+  }
+  video{
+      height:400px;
+      width: 400px;
+  }
+
+
+
+  /* howsolarworks.html */
+  .article-container{
+      /* flex-direction: column; */
+      /* flex-wrap: wrap; */
+
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 10px;
+      margin: 5px;
+  }
+  .article-container article{
+      width: auto;
+      margin: 0;
+      padding: 10px;
+  }
+  .article1{
+    width: auto;
+    grid-area: 1 / 2 / span 6 / span 1;
+    background-color: yellow;
+}
+.article2{
+    background-color: #007a62;
+    grid-row: 1 / span 2;
+  }
+  .article3{
+    grid-area: 1 / 3 / span 3 / span 1;
+    background-color: pink;
+  }
+  .article4{
+    grid-area: 4 / 3 / span 3 / span 1;
+    background-color: blue;
+  }
+  .article5{
+    grid-row: 3 / span 5;
+    background-color: purple;
+  }
+  .article6{
+    grid-area: 7 / 2 / span 1 / span 2;
+    background-color: orange;
+  }
+  
+aside.p2{
+    display: flex;
+    flex-wrap:wrap;
+}
+  .p2 article {
+    box-shadow: none;
+    border: 0;
+  }
+  .p2 article img{
+      width: 200px;
+    }
+    .p2 article footer{
+      border: 0;
+    }
+    .p2 article footer a{
+      background: none;
+      color: rgb(0, 81, 255);
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  /* end howsolarworks.html */
+
+  /* eusolar.html start */
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  /* eusolar.html end */
+
+
+  /* contact.html start  */
+input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* contact.html end */
