@@ -1,4 +1,14 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1vmin; /*takes the minimum size from width or height*/
+}
+
+body {
   margin: 0;
   padding: 0;
   background: url(img/solar_farm.jpg) no-repeat center center fixed;
@@ -18,48 +28,156 @@ nav a:hover {
   color: #9d7a66;
 }
 
-ul{
+ul {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.mainLogo img{
+.mainLogo img {
   width: 60%;
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-main{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+header .logo {
+  width: 90%;
+  max-width: 50rem;
 }
 
-main p{
+main > p { /*targets direct child*/
   font-size: 1.5vw;
   padding: 2em 6em;
 }
 
-main video{
-    width: 50%;
+main video {
+  display: block;
+    width: 100%;
+    max-width: 100rem;
     height: auto;
+    margin: auto;
 }
 
+.product {
+  width: 30vw;
+  border-radius: 18px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.9);
+  text-align: center;
+  cursor: pointer;
+  /*blur*/
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+  margin: auto;
+}
 
+.product-image{
+  height: 21vw;
+  width: auto;
+}
 
+.product-text {
+  height: 34vw;
+}
 
+.product-text h2 {
+  padding: 1em 1em 0;
+  font-size: 1.3em;
+}
+
+.product-text p {
+  padding: 1em;
+}
+
+.product-links {
+  height: 8vw;
+  display: flex;
+
+}
+
+.product-links a {
+  display: inline-flex;
+  flex-grow: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.product1 a {
+  background: #fc4e54;
+}
+.product1 a:hover {
+  background: #d55d5d;
+}
+
+.product2 a {
+  background: #008dcc;
+}
+.product2 a:hover {
+  background: #007ab3
+}
+
+.product3 a {
+  background: #3a3a3c;
+}
+.product3 a:hover {
+  background: #323234
+}
+
+.products {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+aside {
+  display: inline;
+  width: 30%;
+  float: right;
+  background: #f1caa7;
+  padding: 4rem;
+  margin-top: 4rem;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: black;
+}
+
+footer {
+	background: #f1caa7;
+	padding: 20px;
+  margin: auto;
+  max-width: 1000px;
+  text-align: center;
+  position: fixed
+  bottom: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+footer p {
+  color: black;
+  font-style: italic;
+}
+
+.cookie{
+  cursor: pointer;
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  right: 0;
+  color: #FFF;
+  opacity: .5;
+  background-color: orange;
+}
 
 @media only screen and (max-width: 1179px) {
   /*For Tablets*/
-  ul li{
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   }
 
@@ -68,10 +186,4 @@ main video{
     nav{
       display: none;
     }
-    header img{
-      display: none;
-    }
-
-     }
-
   }
