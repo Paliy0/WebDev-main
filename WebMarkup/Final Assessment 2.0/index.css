@@ -2,12 +2,10 @@ body{
   margin: 0;
   padding: 0;
   background: url(img/solar_farm.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: 100%; /*Base font size is usually 14px */
+  font-size: 1.5vw;
   line-height: 1.5;
 }
 
@@ -27,8 +25,8 @@ ul{
   justify-content: space-evenly;
 }
 
-.mainLogo {
-  width: 40%;
+.mainLogo img{
+  width: 60%;
 }
 
 header{
@@ -36,3 +34,44 @@ header{
   align-items: center;
   flex-direction: column;
 }
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+main p{
+  font-size: 1.5vw;
+  padding: 2em 6em;
+}
+
+main video{
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 1179px) {
+  /*For Tablets*/
+  ul li{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  }
+
+  @media only screen and (max-width: 480px) {
+    /*For Mobile*/
+    nav{
+      display: none;
+    }
+    header img{
+      display: none;
+    }
+
+     }
+
+  }
