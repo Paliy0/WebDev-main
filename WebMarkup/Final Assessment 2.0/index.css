@@ -1,0 +1,38 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(img/solar_farm.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%; /*Base font size is usually 14px */
+  line-height: 1.5;
+}
+
+nav a {
+  text-decoration: none; /*removes underlining links*/
+  color: currentColor; /* uses the nearest defined color */
+}
+
+nav a:hover {
+  color: #9d7a66;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainLogo {
+  width: 40%;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
