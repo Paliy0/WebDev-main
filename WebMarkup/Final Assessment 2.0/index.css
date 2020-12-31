@@ -15,7 +15,7 @@ body {
   background-size: cover;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.5vw;
+  font-size: 1vw;
   line-height: 1.5;
 }
 
@@ -75,12 +75,12 @@ main video {
 }
 
 .product-image{
-  height: 21vw;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .product-text {
-  height: 34vw;
+  height: 17vw;
 }
 
 .product-text h2 {
@@ -93,7 +93,7 @@ main video {
 }
 
 .product-links {
-  height: 8vw;
+  height: 4vw;
   display: flex;
 
 }
@@ -133,7 +133,7 @@ main video {
   display: inline-flex;
   flex-wrap: wrap;
   width: 70%;
-  margin-top: 2rem;
+  margin: 2rem 0 2rem;
 }
 
 aside {
@@ -178,6 +178,11 @@ footer p {
 
 @media only screen and (max-width: 1179px) {
   /*For Tablets*/
+
+  aside {
+    display: none;
+  }
+
 
   }
 
