@@ -15,8 +15,8 @@ body {
   background-size: cover;
   color: #fff;
   font-family: 'Poppins', sans-serif;
-  font-size: 1vw;
   line-height: 1.5;
+  
 }
 
 nav a {
@@ -28,6 +28,11 @@ nav a:hover {
   color: #9d7a66;
 }
 
+.navItem {
+  font-size: 3em;
+  padding-left: 4em;
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -37,6 +42,7 @@ ul {
 
 .mainLogo img {
   width: 60%;
+  min-width: 20rem;
 }
 
 header {
@@ -44,9 +50,14 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 header .logo {
   width: 90%;
   max-width: 50rem;
+}
+
+header h1 {
+  font-size: 4rem;
 }
 
 main > p { /*targets direct child*/
@@ -85,11 +96,12 @@ main video {
 
 .product-text h2 {
   padding: 1em 1em 0;
-  font-size: 1.3em;
+  /*font-size: 2vw;*/
 }
 
 .product-text p {
   padding: 1em;
+  /*font-size: 1vw;*/
 }
 
 .product-links {
