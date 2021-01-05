@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(img/solar_farm.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Navigation & Header*/
+
+nav a {
+  text-decoration: none; /*removes underlining links*/
+  color: currentColor; /* uses the nearest defined color */
+}
+
+nav a:hover {
+  color: #9d7a66;
+}
+
+.navItem {
+  font-size: 3rem;
+  padding-left: 4rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.mainLogo img {
+  width: 60%;
+  min-width: 20rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header .logo {
+  width: 90%;
+  max-width: 50rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.contact-section {
+  padding: 50px;
+}
+
+.contact-section h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: #ebb383;
+  margin: 40px auto;
+  border-radius: 15px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #ebb383;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 120%; /*Base font size is usually 14px */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  font-size: 16px;
+}
+
+.contact-form-text:focus {
+  box-shadow: 0 0 5px 2px #f1caa7;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: #ebb383;
+  padding: 12px 50px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.contact-form-btn:hover {
+  background: #f1caa7
+}

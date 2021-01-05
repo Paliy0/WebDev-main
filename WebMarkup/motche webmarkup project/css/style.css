@@ -3,7 +3,7 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
     transition: .2s;
-    
+
 }
 main{
     display: flex;
@@ -39,7 +39,7 @@ video{
     .header div h1{
         margin: 20px 0;
      }
-    
+
   }
 
 .header div h2{
@@ -49,7 +49,7 @@ video{
     color: #333;
     line-height: 40px;
     font-size: 50px;
-    
+
 }
 
 .header a {
@@ -126,10 +126,10 @@ video{
     .hamburger-menu{
       display: block;
     }
-    
-  }
 
-  
+}
+
+
 
 .navbar li a:hover {
     background-color: #1abc9c;
@@ -281,7 +281,7 @@ aside li{
     grid-area: 7 / 2 / span 1 / span 2;
     background-color: orange;
   }
-  
+
 aside.p2{
     display: flex;
     flex-wrap:wrap;
@@ -316,7 +316,7 @@ aside.p2{
   /* contact.html start  */
 input[type=text], textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -324,7 +324,7 @@ input[type=text], textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
   }
-  
+
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #4CAF50;
@@ -334,10 +334,10 @@ input[type=text], textarea {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
+
   /* contact.html end */
