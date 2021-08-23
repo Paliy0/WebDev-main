@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    --first-height: 100vh;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.scroll-wrapper {
+
+  position: relative;
+  top: var(--first-height);
+}
+
+section {
+  width: 100%;
+}
+
+.first {
+  height: var(--first-height);
+  background-image: url(../img/proyectos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: fixed;
+  z-index: -1;
+}
+
+.second {
+  height: 50rem;
+  background-color: green;
+}
+
+.third {
+  height: 50rem;
+  background-color: yellow;
+}
