@@ -7,9 +7,11 @@ const app = express();
 // Gzip
 app.use(compression());
 
-app.use(express.static(path.resolve(__dirname, "src"), {
-	extensions: ["html"]
-}));
+app.use(
+  express.static(path.resolve(__dirname, "src"), {
+    extensions: ["html"],
+  })
+);
 
 const PORT = process.env.PORT || 8080;
 
