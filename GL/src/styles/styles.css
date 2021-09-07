@@ -47,28 +47,35 @@ nav a:hover {
   cursor: pointer;
 }
 
-section {
+.grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 1rem;
+}
+
+.col {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px 1.5px,
+    rgba(0, 0, 0, 0.6) 0px 2px 4px -1px;
+  padding: 3rem;
+  border-radius: 4px;
 }
 
 section h2 {
-  color: white;
+  color: black;
   font-size: 5rem;
 }
 
 section h3 {
-  color: white;
+  color: black;
   font-size: 2.5rem;
-}
-
-.header {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 .col p {
-  color: white;
+  color: black;
   font-size: 1.5rem;
 }
 
@@ -93,7 +100,7 @@ section h3 {
 
 #servicios {
   height: 60rem;
-  background-color: #01172f;
+  background-color: #fff;
 }
 
 #proyectos {
