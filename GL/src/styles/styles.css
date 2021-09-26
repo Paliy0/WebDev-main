@@ -47,6 +47,8 @@ nav a:hover {
   cursor: pointer;
 }
 
+/*SERVICIOS*/
+
 .grid {
   display: grid;
   gap: 1rem;
@@ -54,7 +56,7 @@ nav a:hover {
   padding: 1rem;
 }
 
-.col {
+.servicio {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 6px 1.5px,
     rgba(0, 0, 0, 0.6) 0px 2px 4px -1px;
   padding: 3rem;
@@ -64,17 +66,23 @@ nav a:hover {
 section h2 {
   color: black;
   font-size: 5rem;
+  text-align: center;
 }
 
 section h3 {
   color: black;
   font-size: 2.5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.col p {
+.servicio:hover {
+  background-color: rebeccapurple;
+}
+
+.servicio p {
   color: black;
   font-size: 1.5rem;
 }
@@ -111,4 +119,26 @@ section h3 {
 #contacto {
   height: 60rem;
   background-color: #00635d;
+}
+
+/*DETALLE SERVICIO*/
+
+.service-detail {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-detail h2 {
+  font-size: 4rem;
+  margin: 2rem;
+}
+
+.service-detail ul {
+  margin: 4rem 0 0 5rem;
+}
+
+.service-detail li {
+  font-size: 2rem;
+  padding: 2rem;
 }
